@@ -3,6 +3,6 @@ Team members:
 Sarah Lee,
 Gaosong Liu,
 Emilio Gonzalez,
-Jackson Confer,
+Jackson Confer
 
 Overview: 
