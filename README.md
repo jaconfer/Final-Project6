@@ -1,7 +1,8 @@
 # Final-Project6
-Sarah Lee
-Gaosong Liu
-Emilio Gonzalez
-Jackson Confer
+Team members: 
+Sarah Lee,
+Gaosong Liu,
+Emilio Gonzalez,
+Jackson Confer,
 
 Overview: 
