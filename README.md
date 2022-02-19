@@ -18,3 +18,6 @@ Week2
  
   (2/17 Thur)
   found all the resources that are relevant to project
+  
+  (2/18) Fri
+  Written the assignment
