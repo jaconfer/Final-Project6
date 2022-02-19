@@ -18,3 +18,6 @@ Week2
  
   (2/17 Thur)
   found all the resources that are relevant to project
+  
+  (2/18 Fri)
+  Finished the write up, added _Fast Times at Ridgemeont High_ to the sourcee list, and found a better transcription of _Mean Girls_
