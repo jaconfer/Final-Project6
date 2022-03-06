@@ -1,0 +1,31 @@
+import re
+
+
+def write(mov, x, lst):
+    with open(str(mov)+'_'+x+'s.txt', 'w') as mgl:
+        for item in lst:
+            mgl.write('\n>' + item)
+
+
+def filter(mov):
+    like_lst = []
+    uhm_lst = []
+    script = open(mov+'.txt', 'r').read()
+    edit = re.sub(r'(^|\s|\n)([A-Z]{1}[a-z]*D?)\.(\n|\s|[,.;:])', ' --#-- TITLE --#-- '.upper(), script)
+    lst = re.split(r'\.\s[A-Z]|\?|!', edit)
+    for item in lst:
+        line = item.replace('\n', '')
+        if re.search(r'((^|\s)[uU]*[hH]*[mM]*,\s)', line):
+            line2 = re.sub(r'((^|\s)[uU]*[hH]*[mM]*,\s)', ' --$-- UHM, --$-- ', line)
+            uhm_lst.append(line2)
+        elif re.search(r'\s[lL]ike,\s|^[lL]ike,\s', line):
+            line3 = re.sub(r'\s[lL]ike,\s|^[lL]ike,\s', ' --&-- LIKE, --&-- ', line)
+            like_lst.append(line3)
+    write(mov, 'uhm', uhm_lst)
+    write(mov, 'like', like_lst)
+
+
+filter('mean_girls')
+filter('ladybird')
+filter('ridgemont')
+filter('clueless')
